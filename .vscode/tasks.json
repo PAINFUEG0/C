@@ -2,11 +2,11 @@
   "tasks": [
     {
       "type": "shell",
-      "label": "run executable",
-      "command": "${workspaceFolder}\\run.bat",
       "args": ["${file}"],
-      "problemMatcher": [],
-      "group": { "kind": "test", "isDefault": true }
+      "problemMatcher": ["$gcc"],
+      "command": "${workspaceFolder}\\run.bat",
+      "group": { "kind": "test", "isDefault": true },
+      "label": "compile current file and run executable"
     }
   ],
   "version": "2.0.0"
