@@ -3,7 +3,7 @@ setlocal
 
 set "SRC=%~1"
 set "NAME=%~n1"
-set "EXE=%NAME%.exe"
+set "EXE=./dist/%NAME%.exe"
 
 gcc "%SRC%" -o "%EXE%"
 
